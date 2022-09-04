@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="logo">
+      <img src="images\logo.svg" alt="">
+    </div>
+    <div class="container">
+      
+      <div class="container-left">
+        <div class="l1">
+          
+          <label
+            for="bill"
+            style="
+              font-size: 0.8rem;
+              color: hsl(186, 14%, 43%);
+              font-weight: 700;
+            "
+            >Bill</label>
+          <div class="img" style="margin-top: 0.5rem">
+            <img src="images\icon-dollar.svg" alt="$" />
+            <input
+              type="text"
+              id="bill"
+              placeholder="0"
+            />
+          </div>
+        </div>
+        <div class="l2">
+          <p
+            style="
+              font-size: 0.8rem;
+              color: hsl(186, 14%, 43%);
+              font-weight: 700;
+            "
+          >
+            Select Tip %
+          </p>
+          <div class="container-tip" style="margin-top: 0.5rem">
+            <button type="button" id="5per">5%</button>
+            <button type="button" id="10per">10%</button>
+            <button type="button" id="15per">15%</button>
+            <button type="button" id="25per">25%</button>
+            <button type="button" id="50per">50%</button>
+            <input type="text" id="custom" placeholder="Custom" />
+          </div>
+        </div>
+        <div class="l3">
+          <div class="error">
+           
+            <label
+              for="people"
+              style="
+                font-size: 0.8rem;
+                color: hsl(186, 14%, 43%);
+                font-weight: 700;"
+              >Number of People</label>
+              <p class="people-error"></p>
+              
+          </div>
+          <div class="img" style="margin-top: 0.5rem">
+            <img src="images\icon-person.svg" alt="p" />
+            <input
+              type="text"
+              
+              id="people"
+              placeholder="0"
+              
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-right" style="position: relative">
+        <div class="tip-amount-grid">
+          <div class="right">
+            <h3>Tip Amount</h3>
+            <h6>/ person</h6>
+          </div>
+          <h1 id="tip">$0.00</h1>
+        </div>
+        <div class="tip-amount-grid">
+          <div class="right">
+            <h3>Total</h3>
+            <h6>/ person</h6>
+          </div>
+          <h1 id="tot">$0.00</h1>
+        </div>
+        <div >
+          <button class="reset" id="reset" type="reset" disabled >Reset</button>
+        </div>
+      </div>
+    </div>
+   
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">vasanth</a>.
+    </div>
+  </body>
+</html>
